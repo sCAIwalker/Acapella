@@ -7,6 +7,7 @@ import { RepoListComponent } from './github/repo-list/repo-list.component';
 import { RepoDetailComponent } from './github/repo-detail/repo-detail.component';
 import { ContactComponent } from './contact/contact.component';
 import { PostComponent } from './post/post.component';
+import {ResumeComponent} from './resume/resume.component';
 
 export const rootRouterConfig: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -23,6 +24,7 @@ export const rootRouterConfig: Routes = [
       }]
   },
   { path: 'contact', component: ContactComponent },
-  { path: 'post', component: PostComponent}
+  { path: 'post', component: PostComponent},
+  { path: 'resume', component: ResumeComponent}
 ];
 

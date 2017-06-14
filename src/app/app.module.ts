@@ -15,6 +15,7 @@ import { RepoDetailComponent } from './github/repo-detail/repo-detail.component'
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { ContactComponent } from './contact/contact.component';
 import {PostComponent} from './post/post.component';
+import {ResumeComponent} from './resume/resume.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {PostComponent} from './post/post.component';
     RepoDetailComponent,
     HomeComponent,
     ContactComponent,
-    PostComponent
+    PostComponent,
+    ResumeComponent
   ],
   imports: [
     BrowserModule,
