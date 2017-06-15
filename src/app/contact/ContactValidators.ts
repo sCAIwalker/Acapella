@@ -33,7 +33,6 @@ export class ContactValidators {
   static validateHuman = (firstNum: number, secondNum: number) => {
   return (c :FormControl) => {
     var sum =Number(c.value);
-    console.log(sum);
     if (sum != (firstNum + secondNum)) {
       return { validateHuman: true };
     }

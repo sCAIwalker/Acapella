@@ -58,7 +58,7 @@
                             <label>Message</label>
                             <textarea rows="5" class="form-control" placeholder="Message*" id="message" formControlName="message" required></textarea>
                             <div *ngIf="contactForm.controls.message.touched && contactForm.controls.message.errors">
-                                <div *ngIf="contactForm.controls.message.errors.required" class="alert alert-danger">You don't want to tell me anthing? :(</div>
+                                <div *ngIf="contactForm.controls.message.errors.required" class="alert alert-danger">You don't want to tell me anything? :(</div>
                             </div>
                         </div>
                     </div>
@@ -67,7 +67,7 @@
                             <label>Verify that You're Human</label>
                             <input type="email" class="form-control" placeholder="Please Verify That You are a Human :) {{firstNum}} + {{secondNum}}=" id="human" formControlName="human" required>
                             <div *ngIf="contactForm.controls.human.touched && contactForm.controls.human.errors">  
-                                <div *ngIf="contactForm.controls.human.errors.required" class="alert alert-danger">Woah! Need you to confirm homosapien status</div>
+                                <div *ngIf="contactForm.controls.human.errors.required" class="alert alert-danger">Woah! Need you to confirm your homosapien status</div>
                                 <div *ngIf="contactForm.controls.human.errors.validateHuman && contactForm.controls.human.errors.required == null" class="alert alert-danger">YOU ARE NOT A HUMAN! >:1</div>
                             </div>
                         </div>
